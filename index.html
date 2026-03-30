@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeNest Decor - Dark Neon Luxury Interior Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>
+                        <span class="logo-primary">LuxeNest</span>
+                        <span class="logo-secondary">Decor</span>
+                    </h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section id="home" class="hero-slider">
+        <div class="slide active" data-color="#00ffff">
+            <div class="slide-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1758833502047-8f1c7dc5edd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbmVvbiUyMGZ1cm5pdHVyZSUyMG1vZGVybiUyMGludGVyaW9yfGVufDF8fHx8MTc2OTUyOTA0Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Illuminate Your Living Space">
+            <div class="slide-content">
+                <h2 class="slide-title" style="color: #00ffff;">Illuminate Your Living Space</h2>
+                <button class="slide-btn" data-color="#00ffff">Explore Now</button>
+            </div>
+        </div>
+        <div class="slide" data-color="#ff00ff">
+            <div class="slide-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1758448755856-01d3add0177b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnB1bmslMjBsdXh1cnklMjBsaXZpbmclMjByb29tJTIwTEVEJTIwbGlnaHRzfGVufDF8fHx8MTc2OTUyOTA0Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Modern Decor for the Digital Age">
+            <div class="slide-content">
+                <h2 class="slide-title" style="color: #ff00ff;">Modern Decor for the Digital Age</h2>
+                <button class="slide-btn" data-color="#ff00ff">Explore Now</button>
+            </div>
+        </div>
+        <button class="slider-arrow slider-arrow-left" onclick="changeSlide(-1)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="slider-arrow slider-arrow-right" onclick="changeSlide(1)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="slider-dots">
+            <button class="dot active" onclick="goToSlide(0)"></button>
+            <button class="dot" onclick="goToSlide(1)"></button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="text-primary">Our</span>
+                    <span class="text-secondary">Services</span>
+                </h2>
+                <p class="section-subtitle">Next-generation decor solutions for the modern home</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-color="#00ffff">
+                    <div class="service-icon" style="background-color: rgba(0, 255, 255, 0.2);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="color: #00ffff;">Interior Design</h3>
+                    <p>Transform your space with cutting-edge aesthetics and personalized design solutions.</p>
+                </div>
+                <div class="service-card" data-color="#ff00ff">
+                    <div class="service-icon" style="background-color: rgba(255, 0, 255, 0.2);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff00ff" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </div>
+                    <h3 style="color: #ff00ff;">Custom LED Installations</h3>
+                    <p>Illuminate your home with custom neon and LED lighting systems.</p>
+                </div>
+                <div class="service-card" data-color="#39ff14">
+                    <div class="service-icon" style="background-color: rgba(57, 255, 20, 0.2);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 style="color: #39ff14;">Smart Home Integration</h3>
+                    <p>Connect your living space with the latest smart home technology.</p>
+                </div>
+                <div class="service-card" data-color="#ffaa00">
+                    <div class="service-icon" style="background-color: rgba(255, 170, 0, 0.2);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffaa00" stroke-width="2">
+                            <rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect>
+                            <line x1="12" y1="8" x2="12" y2="4"></line>
+                            <line x1="8" y1="4" x2="16" y2="4"></line>
+                        </svg>
+                    </div>
+                    <h3 style="color: #ffaa00;">Luxury Furniture Sourcing</h3>
+                    <p>Access exclusive designer pieces from around the globe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="text-secondary">Why Choose</span>
+                    <span class="text-accent">Us</span>
+                </h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon" data-color="#00ffff">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 style="color: #00ffff;">Next-Gen Aesthetics</h3>
+                    <p>Cutting-edge design that pushes boundaries</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon" data-color="#ff00ff">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff00ff" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="color: #ff00ff;">Global Shipping</h3>
+                    <p>Worldwide delivery to your doorstep</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon" data-color="#39ff14">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 style="color: #39ff14;">Expert Stylists</h3>
+                    <p>Professional consultation and support</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon" data-color="#ffaa00">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffaa00" stroke-width="2">
+                            <path d="M12 2a10 10 0 0 0 0 20c1.38 0 2.66-.28 3.83-.78l.43-.18a10 10 0 0 0 5.1-5.1l.18-.43c.5-1.17.78-2.45.78-3.83A10 10 0 0 0 12 2z"></path>
+                            <path d="M12 2v20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h3 style="color: #ffaa00;">Eco-Tech Materials</h3>
+                    <p>Sustainable technology-driven solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="text-accent">The Neon</span>
+                    <span class="text-primary">Glow-Up</span>
+                </h2>
+                <p class="section-subtitle">See the transformation with our before & after showcase</p>
+            </div>
+            <div class="gallery-container">
+                <div class="before-after-slider">
+                    <div class="before-after-container">
+                        <div class="image-container after-image" id="afterImage">
+                            <img src="https://images.unsplash.com/photo-1768141732026-55ea156f5aa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtaW5pbWFsaXN0JTIwZGFyayUyMHJvb20lMjBuZW9uJTIwYW1iaWVudHxlbnwxfHx8fDE3Njk1MjkwNDN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="After">
+                            <div class="image-label after-label">AFTER</div>
+                        </div>
+                        <div class="image-container before-image">
+                            <img src="https://images.unsplash.com/photo-1557847211-a0be5b0ed242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGRlc2lnbiUyMGJlZm9yZSUyMGFmdGVyJTIwdHJhbnNmb3JtYXRpb258ZW58MXx8fHwxNzY5NTI5MDQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Before">
+                            <div class="image-label before-label">BEFORE</div>
+                        </div>
+                        <div class="slider-handle" id="sliderHandle">
+                            <div class="slider-button">
+                                <div class="slider-line"></div>
+                                <div class="slider-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="gallery-title">Living Room Transformation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="text-secondary">Client</span>
+                    <span class="text-accent">Testimonials</span>
+                </h2>
+                <p class="section-subtitle">See what our clients say about their neon glow-up</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-color="#00ffff">
+                    <div class="rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#00ffff" stroke="#00ffff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#00ffff" stroke="#00ffff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#00ffff" stroke="#00ffff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#00ffff" stroke="#00ffff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#00ffff" stroke="#00ffff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"LuxeNest completely transformed my apartment into a cyberpunk paradise. The LED installations are absolutely stunning!"</p>
+                    <div class="testimonial-author">
+                        <p class="author-name" style="color: #00ffff;">Alex Rivera</p>
+                        <p class="author-role">Tech Entrepreneur</p>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-color="#ff00ff">
+                    <div class="rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#ff00ff" stroke="#ff00ff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#ff00ff" stroke="#ff00ff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#ff00ff" stroke="#ff00ff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#ff00ff" stroke="#ff00ff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#ff00ff" stroke="#ff00ff">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"The neon aesthetic brought my creative space to life. Every visitor is amazed by the vibe."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name" style="color: #ff00ff;">Morgan Chen</p>
+                        <p class="author-role">Digital Artist</p>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-color="#39ff14">
+                    <div class="rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#39ff14" stroke="#39ff14">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#39ff14" stroke="#39ff14">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#39ff14" stroke="#39ff14">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#39ff14" stroke="#39ff14">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#39ff14" stroke="#39ff14">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"From dull to dazzling! My home office setup has never looked better. Perfect for streaming."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name" style="color: #39ff14;">Jordan Smith</p>
+                        <p class="author-role">Content Creator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="text-primary">The Modern</span>
+                    <span class="text-secondary">Journal</span>
+                </h2>
+                <p class="section-subtitle">Latest insights and trends in cyber-luxe design</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card" data-color="#00ffff">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1758548157378-46bc8e6dc6c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBpbnRlcmlvciUyMGRlc2lnbiUyMExFRCUyMGFjY2VudCUyMGxpZ2h0aW5nfGVufDF8fHx8MTc2OTUyOTA0M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="How to Layer Neon Lighting">
+                        <div class="blog-date" style="color: #00ffff;">Jan 25, 2026</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 style="color: #00ffff;">How to Layer Neon Lighting</h3>
+                        <p>Master the art of creating depth with multi-layered LED installations.</p>
+                        <div class="blog-link">
+                            <span style="color: #00ffff;">Read More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card" data-color="#ff00ff">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1767800766429-7179fd80948f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob21lJTIwb2ZmaWNlJTIwbmVvbiUyMHNldHVwfGVufDF8fHx8MTc2OTUyOTA0M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Dark Mode Interior Trends 2026">
+                        <div class="blog-date" style="color: #ff00ff;">Jan 20, 2026</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 style="color: #ff00ff;">Dark Mode Interior Trends 2026</h3>
+                        <p>Explore the latest trends in dark aesthetic interior design.</p>
+                        <div class="blog-link">
+                            <span style="color: #ff00ff;">Read More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff00ff" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card" data-color="#39ff14">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1758833502047-8f1c7dc5edd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbmVvbiUyMGZ1cm5pdHVyZSUyMG1vZGVybiUyMGludGVyaW9yfGVufDF8fHx8MTc2OTUyOTA0Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Cyberpunk Home Office Setup">
+                        <div class="blog-date" style="color: #39ff14;">Jan 15, 2026</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 style="color: #39ff14;">Cyberpunk Home Office Setup</h3>
+                        <p>Create the ultimate futuristic workspace in your home.</p>
+                        <div class="blog-link">
+                            <span style="color: #39ff14;">Read More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact-us" class="footer">
+        <div class="neon-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">
+                        <span class="text-primary">LuxeNest</span>
+                        <span class="text-secondary">Decor</span>
+                    </h3>
+                    <p class="footer-text">Illuminating spaces with next-gen design solutions for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-color="#ff00ff">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff00ff" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" data-color="#00ffff">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" data-color="#39ff14">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title text-primary">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title text-secondary">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title text-accent">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>371 7th Ave, New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <a href="tel:+13833889939">+1-383-388-9939</a>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:help@LuxeNestDecor.in">help@LuxeNestDecor.in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="text-primary">LuxeNest Decor</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
